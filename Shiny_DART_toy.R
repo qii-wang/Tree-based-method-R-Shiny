@@ -1,6 +1,4 @@
 library(BART)
-library(readr)
-library(tidyverse)
 
 ## Input
 ## 1. df: the input data
