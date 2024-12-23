@@ -27,6 +27,7 @@ var_select_DART = function(df, outcome_var=NULL, time_var=NULL, status_var=NULL,
                            nskip_glm = 2000, ndpost_glm = 5000,
                            nskip_cox = 2000, ndpost_cox = 5000, keepevery_cox = 10, 
                            thresh_dart = 0.5, ntree = 20, seed=1024){
+  set.seed(seed)
   if(dt_type == "lm"){
     df_x = df[, names(df)[which(names(df) != outcome_var)]]
     tstart = proc.time()
